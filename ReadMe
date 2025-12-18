@@ -1,1 +1,70 @@
-This app can be used to save the personal expense
+# Personal Expense Tracker
+
+This is a full-stack application for tracking personal expenses.
+
+## Project Structure
+
+- `frontend/`: React application with Vite
+- `backend/`: Spring Boot application with H2 database
+
+## Backend
+
+- Built with Spring Boot 3.3.0, Java 17
+- H2 in-memory database
+- RESTful API for CRUD operations on expenses
+- CORS enabled for frontend
+
+### Running the Backend
+
+1. Navigate to the backend directory:
+   ```
+   cd backend
+   ```
+2. Run the application:
+   ```
+   ./mvnw spring-boot:run
+   ```
+3. The backend will start on http://localhost:8080
+4. H2 console available at http://localhost:8080/h2-console
+
+## Frontend
+
+- Built with React and Vite
+- Uses Axios for API calls
+- Basic CSS styling
+
+### Running the Frontend
+
+1. Navigate to the frontend directory:
+   ```
+   cd frontend
+   ```
+2. Install dependencies (if not already done):
+   ```
+   npm install
+   ```
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+4. The frontend will start on http://localhost:5173
+
+## Features
+
+- Add new expenses with description, amount, category, and date
+- View list of all expenses
+- Edit existing expenses
+- Delete expenses
+- Filter expenses by category
+
+## API Endpoints
+
+- `GET /api/expenses`: Get all expenses
+- `POST /api/expenses`: Create a new expense
+- `PUT /api/expenses/{id}`: Update an expense
+- `DELETE /api/expenses/{id}`: Delete an expense
+
+## Notes
+
+- Data is stored in H2 in-memory database, so it will be lost on restart
+- CORS is configured to allow requests from http://localhost:5173

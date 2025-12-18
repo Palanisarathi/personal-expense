@@ -1,0 +1,5 @@
+/workspaces/personal-expense/backend/src/main/java/com/example/expense/BackendApplication.java
+/workspaces/personal-expense/backend/src/main/java/com/example/expense/Expense.java
+/workspaces/personal-expense/backend/src/main/java/com/example/expense/ExpenseController.java
+/workspaces/personal-expense/backend/src/main/java/com/example/expense/ExpenseRepository.java
+/workspaces/personal-expense/backend/src/main/java/com/example/expense/ExpenseService.java
